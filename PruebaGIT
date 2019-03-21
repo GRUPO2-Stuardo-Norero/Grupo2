@@ -1,3 +1,9 @@
 esta es una prueba de GIT
 
+<<<<<<< HEAD
 modificacion de rev2
+=======
+
+
+asdasdasdas
+>>>>>>> rev2
