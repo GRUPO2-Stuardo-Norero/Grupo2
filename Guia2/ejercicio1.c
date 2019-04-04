@@ -1,17 +1,38 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
+	int CAT;
+	int ANT;
 	int CLA = 1;
-	int CAT = 3;
-	int ANT = 4
 	int SAL = 300000;
 	int RES = 0;
 
-	if(((CAT==3 || CAT==4) & ANT>=5) || (CAT==2 & ANT>7))
-		RES = 1;
-	else
-		RES = 0;
+	printf("Ingrese Categoria: ");
+	scanf(% CAT);
 
-	return 0;
+	printf("Ingrese antiguedad: ");
+	scanf(% ANT);
+
+	RES = verificar(CAT, ANT);
+
+	printf("trabajador es: %d", RES);
+
+	return RES;
 }
-	
+
+boolean verificar(int Categoria, int antiguedad)
+{
+	if ((Categoria == 3 || Categoria == 4))
+	{
+		if (antiguedad > 5)
+			return true;
+	}
+	else if (Categoria == 2)
+	{
+		if (antiguedad > 7)
+			return true;
+	}
+
+	return false;
+}
