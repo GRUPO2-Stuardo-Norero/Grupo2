@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-void acutemp(float);
-void maxima(float, int);
-void minima(float, int);
+void Acutem(float);
+void Maxima(float, int);
+void Minima(float, int);
 
 float ACT = 0.0;
-float MAX - 99.0;
+float MAX = -99.0;
 float MIN = 99.0;
 
-int hora_max;
-int hora_min;
+int HMAX;
+int HMIN;
 
 void main(void)
 {
