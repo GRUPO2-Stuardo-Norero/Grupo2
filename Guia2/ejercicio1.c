@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int verificar(int Categoria, int antiguedad);
+
 int main()
 {
 	int CAT;
@@ -9,30 +11,30 @@ int main()
 	int RES = 0;
 
 	printf("Ingrese Categoria: ");
-	scanf(% CAT);
-
+	scanf("%d",&CAT);
+	
 	printf("Ingrese antiguedad: ");
-	scanf(% ANT);
+	scanf("%d",&ANT);
 
 	RES = verificar(CAT, ANT);
 
-	printf("trabajador es: %d", RES);
+	printf("trabajador es: %d \n", RES);
 
 	return RES;
 }
 
-boolean verificar(int Categoria, int antiguedad)
+int verificar(int Categoria, int antiguedad)
 {
 	if ((Categoria == 3 || Categoria == 4))
 	{
 		if (antiguedad > 5)
-			return true;
+			return 1;
 	}
 	else if (Categoria == 2)
 	{
 		if (antiguedad > 7)
-			return true;
+			return 1;
 	}
 
-	return false;
+	return 0;
 }
