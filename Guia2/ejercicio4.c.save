@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+void acutemp(float);
+void maxima(float,int);
+void minima(float,int);
+
+float act = 0.0;
+float max -99.0;
+float min = 99.0;
+
+int hora_max;
+int hora_min;
+
+void main(void)
+{
+float temperatura;
+
+}
+
+
+
+

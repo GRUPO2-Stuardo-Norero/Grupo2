@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <linux/i2c-dev.h>
+#include <wiringPiSPI.h>
+
+#define ADDRESS 0x04
+
+int main(){
+	int file;
+	unsigned char cmd[16];
+	int enviado = 1;
+	char buff[1];
+	int recibido;
+
+	if(read(file, cmd, 1) == 1){
+		recibido = (int) buff[0];
+		printf("Recibido %d\n", recibido);
+	}
+
+}
+
+
