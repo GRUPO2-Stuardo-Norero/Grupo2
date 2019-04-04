@@ -11,10 +11,10 @@ int main()
 	int RES = 0;
 
 	printf("Ingrese Categoria: ");
-	scanf("%d",&CAT);
-	
+	scanf("%d", &CAT);
+
 	printf("Ingrese antiguedad: ");
-	scanf("%d",&ANT);
+	scanf("%d", &ANT);
 
 	RES = verificar(CAT, ANT);
 
