@@ -1,25 +1,31 @@
-#include <stdio.h>
+#include <stdio.h> 
+#include <stdlib.h> 
+#include<time.h> 
 #include <math.h>
 
-void acutemp(float);
-void maxima(float, int);
-void minima(float, int);
+void Acutem(float);
+void Maxima(float, int);
+void Minima(float, int);
 
 float ACT = 0.0;
-float MAX - 99.0;
+float MAX = -99.0;
 float MIN = 99.0;
 
-int hora_max;
-int hora_min;
+int HMAX;
+int HMIN;
 
 void main(void)
 {
     float TEM;
     int I;
+    int N = 50;
+    int M = -50;
     for (I = 1; I <= 24; I++)
     {
-        printf("Ingresa la temperatura de la hora %d: ", I);
-        scanf("%f", &TEM);
+	   TEM = rand() %(N-M+1) + M;   // Este entrega M y N
+	    
+	    printf("\nTEM%d= %.2f", I,TEM);
+	    
         Acutem(TEM);
         Maxima(TEM, I);
         Minima(TEM, I);
