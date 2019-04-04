@@ -5,9 +5,9 @@ void acutemp(float);
 void maxima(float, int);
 void minima(float, int);
 
-float act = 0.0;
-float max - 99.0;
-float min = 99.0;
+float ACT = 0.0;
+float MAX - 99.0;
+float MIN = 99.0;
 
 int hora_max;
 int hora_min;
